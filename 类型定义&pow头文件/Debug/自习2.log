@@ -1,0 +1,4 @@
+﻿  书本2.c
+C:\Users\28215\source\repos\自习2\书本2.c(4,1): warning C4305: “初始化”: 从“double”到“float”截断
+C:\Users\28215\source\repos\自习2\书本2.c(9,1): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  自习2.vcxproj -> C:\Users\28215\source\repos\自习2\Debug\自习2.exe

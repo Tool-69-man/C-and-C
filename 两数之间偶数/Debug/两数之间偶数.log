@@ -1,0 +1,4 @@
+﻿  两束之间偶数.c
+C:\Users\28215\source\repos\两数之间偶数\两束之间偶数.c(7,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : 参见“scanf”的声明
+  两数之间偶数.vcxproj -> C:\Users\28215\source\repos\两数之间偶数\Debug\两数之间偶数.exe

@@ -1,0 +1,5 @@
+﻿  源.c
+C:\Users\28215\source\repos\Project9\源.c(6,7): warning C4244: “函数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\28215\source\repos\Project9\源.c(6,10): warning C4244: “函数”: 从“int”转换到“float”，可能丢失数据
+C:\Users\28215\source\repos\Project9\源.c(11,8): warning C4101: “div”: 未引用的局部变量
+  Project9.vcxproj -> C:\Users\28215\source\repos\Project9\Debug\Project9.exe

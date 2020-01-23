@@ -1,0 +1,5 @@
+﻿  字符串strlwr.c
+C:\Users\28215\source\repos\数组字母大变小\字符串strlwr.c(4,6): warning C4013: “gets”未定义；假设外部返回 int
+C:\Users\28215\source\repos\数组字母大变小\字符串strlwr.c(6,21): warning C4013: “strlwr”未定义；假设外部返回 int
+C:\Users\28215\source\repos\数组字母大变小\字符串strlwr.c(6,9): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int”
+  数组字母大变小.vcxproj -> C:\Users\28215\source\repos\数组字母大变小\Debug\数组字母大变小.exe

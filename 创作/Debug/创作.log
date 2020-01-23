@@ -1,0 +1,8 @@
+﻿  Game State.c
+C:\Users\28215\source\repos\创作\Game State.c(36,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : 参见“scanf”的声明
+C:\Users\28215\source\repos\创作\Game State.c(39,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : 参见“scanf”的声明
+C:\Users\28215\source\repos\创作\Game State.c(12,7): warning C4101: “difficulty”: 未引用的局部变量
+C:\Users\28215\source\repos\创作\Game State.c(13,7): warning C4101: “weight”: 未引用的局部变量
+  创作.vcxproj -> C:\Users\28215\source\repos\创作\Debug\创作.exe

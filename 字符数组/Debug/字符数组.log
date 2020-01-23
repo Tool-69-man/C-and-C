@@ -1,0 +1,6 @@
+﻿  2020.1.15.c
+C:\Users\28215\source\repos\字符数组\2020.1.15.c(49,9): warning C4047: “函数”:“const char *”与“char (*)[20]”的间接级别不同
+C:\Users\28215\source\repos\字符数组\2020.1.15.c(49,9): warning C4024: “puts”: 形参和实参 1 的类型不同
+C:\Users\28215\source\repos\字符数组\2020.1.15.c(47,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : 参见“scanf”的声明
+  字符数组.vcxproj -> C:\Users\28215\source\repos\字符数组\Debug\字符数组.exe

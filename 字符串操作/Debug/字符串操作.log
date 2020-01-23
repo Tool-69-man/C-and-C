@@ -1,0 +1,4 @@
+﻿  zfc.c
+C:\Users\28215\source\repos\字符串操作\zfc.c(6,6): warning C4013: “gets”未定义；假设外部返回 int
+C:\Users\28215\source\repos\字符串操作\zfc.c(11,9): warning C4013: “strncat”未定义；假设外部返回 int
+  字符串操作.vcxproj -> C:\Users\28215\source\repos\字符串操作\Debug\字符串操作.exe

@@ -1,0 +1,7 @@
+﻿  ConsoleApplication2.cpp
+C:\Users\28215\source\repos\ConsoleApplication2\ConsoleApplication2.cpp(6,37): error C2059: 语法错误:“;”
+C:\Users\28215\source\repos\ConsoleApplication2\ConsoleApplication2.cpp(8,6): error C2143: 语法错误: 缺少“;”(在“>>”的前面)
+C:\Users\28215\source\repos\ConsoleApplication2\ConsoleApplication2.cpp(8,6): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+C:\Users\28215\source\repos\ConsoleApplication2\ConsoleApplication2.cpp(10,2): error C2059: 语法错误:“return”
+C:\Users\28215\source\repos\ConsoleApplication2\ConsoleApplication2.cpp(12,1): error C2059: 语法错误:“}”
+C:\Users\28215\source\repos\ConsoleApplication2\ConsoleApplication2.cpp(12,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)

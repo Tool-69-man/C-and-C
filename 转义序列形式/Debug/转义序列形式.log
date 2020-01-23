@@ -1,0 +1,3 @@
+﻿  2020.1.13.c
+C:\Users\28215\source\repos\转义序列形式\2020.1.13.c(12,1): warning C4305: “初始化”: 从“int”到“char”截断
+  转义序列形式.vcxproj -> C:\Users\28215\source\repos\转义序列形式\Debug\转义序列形式.exe

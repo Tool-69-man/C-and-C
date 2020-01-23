@@ -1,0 +1,4 @@
+﻿  2020.1.20.c
+C:\Users\28215\source\repos\数据传递（数组）（连接字符串）\2020.1.20.c(6,6): warning C4013: “gets”未定义；假设外部返回 int
+C:\Users\28215\source\repos\数据传递（数组）（连接字符串）\2020.1.20.c(26): warning C4716: “fun1”: 必须返回一个值
+  数据传递（数组）（连接字符串）.vcxproj -> C:\Users\28215\source\repos\数据传递（数组）（连接字符串）\Debug\数据传递（数组）（连接字符串）.exe

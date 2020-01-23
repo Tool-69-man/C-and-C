@@ -1,0 +1,4 @@
+﻿  2020.1.14.c
+C:\Users\28215\source\repos\max\2020.1.14.c(4,17): warning C4013: “max”未定义；假设外部返回 int
+2020.1.14.obj : error LNK2019: 无法解析的外部符号 _max，该符号在函数 _main 中被引用
+C:\Users\28215\source\repos\max\Debug\max.exe : fatal error LNK1120: 1 个无法解析的外部命令
