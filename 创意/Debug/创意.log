@@ -1,0 +1,3 @@
+﻿  2020.1.26.c
+C:\Users\28215\source\repos\创意\2020.1.26.c(10,16): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  创意.vcxproj -> C:\Users\28215\source\repos\创意\Debug\创意.exe
