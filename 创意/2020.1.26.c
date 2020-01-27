@@ -45,8 +45,6 @@ int main() {
 			printf("‘ı√¥ª·¥Ì\n");
 			break;
 		}
-
-
 	}
 	return 0;
 }
