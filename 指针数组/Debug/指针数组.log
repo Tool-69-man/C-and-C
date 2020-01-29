@@ -1,0 +1,4 @@
+﻿  2020.1.28.c
+C:\Users\28215\source\repos\指针数组\2020.1.28.c(3,8): warning C4101: “j”: 未引用的局部变量
+C:\Users\28215\source\repos\指针数组\2020.1.28.c(3,6): warning C4101: “i”: 未引用的局部变量
+  指针数组.vcxproj -> C:\Users\28215\source\repos\指针数组\Debug\指针数组.exe
