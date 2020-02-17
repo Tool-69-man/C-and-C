@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "文件交互C++尝试", "文件交互C++尝试.vcxproj", "{65D24520-125B-4574-B837-42F998322056}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65D24520-125B-4574-B837-42F998322056}.Debug|x64.ActiveCfg = Debug|x64
+		{65D24520-125B-4574-B837-42F998322056}.Debug|x64.Build.0 = Debug|x64
+		{65D24520-125B-4574-B837-42F998322056}.Debug|x86.ActiveCfg = Debug|Win32
+		{65D24520-125B-4574-B837-42F998322056}.Debug|x86.Build.0 = Debug|Win32
+		{65D24520-125B-4574-B837-42F998322056}.Release|x64.ActiveCfg = Release|x64
+		{65D24520-125B-4574-B837-42F998322056}.Release|x64.Build.0 = Release|x64
+		{65D24520-125B-4574-B837-42F998322056}.Release|x86.ActiveCfg = Release|Win32
+		{65D24520-125B-4574-B837-42F998322056}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23D004AC-2C1A-4C32-A8E0-13D6E1843075}
+	EndGlobalSection
+EndGlobal
