@@ -12,8 +12,6 @@
 */
 
 
-
-
 //顺序表
 typedef struct student {
 	int num[max_lenght];//   顺序表的数组空间  
@@ -21,15 +19,10 @@ typedef struct student {
 }stu;
 
 
-
-
-
 //获取数据
 int get_lenght(stu* L) {
 	return L->lenght;
 }
-
-
 
 
 
@@ -51,9 +44,6 @@ int is_empty(stu* L) {
 
 
 
-
-
-
 //遍历
 void view(stu* L) {
 	int i;
@@ -63,8 +53,6 @@ void view(stu* L) {
 	}
 	printf("  <-遍历的结果\n");
 }
-
-
 
 
 
@@ -123,6 +111,40 @@ int delete(stu*L,int index) {
 }
 
 
+
+//查询数据    查询不到返回   -1   其他值表示  位置
+//查询多次是在main函数中决定
+int search(stu* L, int from, int e) {
+	//判断数据是否为空
+	if (L->lenght == 0) {
+		return -1;
+	}
+	//遍历 顺序表 从from开始查询
+	int i = 0;
+	for (i = from; i < L->lenght; i++)
+	{
+		if (L->num[i] == e) {
+			return i;
+		}
+	}
+	return -1;//return -1;必须在for循环之外   否则只会判断  from 是否为 e（想查询数）
+}
+
+
+//修改操作
+int update(stu*L,int index,int e) {
+	//判断是否为空
+	if (L->lenght==0) {
+		return 1;
+	}
+	//判断位置是否合理
+	if (index<0||index>L->lenght) {
+		return 2;
+	}
+	//改变change
+	L->num[index] = e;
+	return 0;
+}
 
 
 int main() {
@@ -188,6 +210,62 @@ int main() {
 		printf("顺序表不为空\n");
 	}
 	//遍历
+	view(&man);
+
+
+	//查询
+	printf("以下为此时实验结果\n");
+	insert(&man, 0, 1);
+	insert(&man, 1, 4);
+	insert(&man, 2, 3);
+	insert(&man, 3, 4);
+	insert(&man, 4, 4);
+	view(&man);
+	int from = 0;
+	//int index = 0;
+	int xx = 0;
+	//不能查   重复数值    只能找到第一个   结束   UP 后 创建循环
+	/*index = search(&man, from, 4);
+	if (index == -1) {
+		printf("未查询到该数据\n");
+	}
+	else {
+		printf("查找数值在第%d位\n", index);
+	}*/
+
+	while (1)
+	{
+		int index = search(&man,from,4);//为什么 有int 没事？？这不是重复定义了吗
+		if (index==-1)
+		{
+			break;
+		}
+		printf("找到数据的%d\n",index);
+		from = index + 1;
+		++xx;
+	}
+	if (xx == 0) {//    这么长的代码   只有这是自己写的  
+		printf("未找到数据\n");
+	}
+	else
+	{
+		printf("共找到%d个\n",xx);// 最后才找到写代码感觉
+	}
+
+
+	view(&man);
+	ret=update(&man,0,4);
+	if (1 == ret) {
+		printf("修改失败，链表为空\n");
+	}
+	else if(2==ret)
+	{
+		printf("修改不合理\n");
+	}
+else
+	{
+		printf("修改成功\n");
+	}
 	view(&man);
 
 	return 0;

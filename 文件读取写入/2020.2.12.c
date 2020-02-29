@@ -84,8 +84,8 @@ void read(int *x,int *y) {
     {
         printf("文件打开成功...\n");
 
-        fscanf(file, "%d %d", &x, &y);
-        printf("%d %d\n", x, y);
+        fscanf(file, "%d %d", &(*x), &(*y));
+        printf("%d %d\n", *x, *y);
         //关闭文件流
         fclose(file);
         printf("读取文件成功...\n");
@@ -114,10 +114,9 @@ void write(int temp)
 }
 int main() {
     int a=0, b=0, c=0;
-    int* p1 = &a;
-    int* p2 = &b;
-    read(p1,p2);
-    c = *p1 + *p2;
+  
+    read(&a,&b);
+    c = a + b;
     printf("%d\n",c);
     write(c);
     return 0;
