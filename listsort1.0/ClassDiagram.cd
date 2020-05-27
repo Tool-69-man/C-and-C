@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Charu">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAACEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Charu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kuaisu">
+    <Position X="8.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAABAAAAAIAAAAAAACEAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Kuaisu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Maop">
+    <Position X="5.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAACEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Maop.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Num">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Num.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sort">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgABAAIBAIQAAAAAQAAAAAEBAAAAAACAAA=</HashCode>
+      <FileName>sort.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Uisystem">
+    <Position X="6.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Uisystem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Xuanze">
+    <Position X="2.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAACEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Xuanze.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

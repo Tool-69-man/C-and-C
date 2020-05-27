@@ -20,27 +20,29 @@ typedef struct list
 int len(link_list* L) {
 	return L->lenght;
 }
+
 //是否为空    返回1  表示  确实为空
 int is_empty(link_list* L) {
 	return L->lenght == 0;
 }
+
 //查询
-int look(link_list *L,int from,int e) {
+int look(link_list* L, int from, int e) {
 	//判断是否为空
-	if (L->lenght==0) {
+	if (L->lenght == 0) {
 		return 1;
 	}
 	//第一步   找到from 位置节点 
 	man* tmp = L->head;
-	int i=0;
-	for ( i = 0; i < from; i++)
+	int i = 0;
+	for (i = 0; i < from; i++)
 	{
 		tmp = tmp->next;
 	}
 	//第二布   从from节点处开始找
-	for ( i = from; i < L->lenght; i++)
+	for (i = from; i < L->lenght; i++)
 	{
-		if (tmp->id==e)
+		if (tmp->id == e)
 		{
 			return i;//注意只能找一个数值   想反复找需多调用
 		}
@@ -53,20 +55,22 @@ int look(link_list *L,int from,int e) {
 
 
 
-
-int newmake(link_list*L, int index, int e) {
+//插入
+int newmake(link_list* L, int index, int e) {
 	//1 判断插入是否合理
 	if (index < 0 || index >= L->lenght) {
 		return 1;
 	}
 
 	//2 申请空间
-	man* p_new=(man*)malloc(sizeof(man));
+	man* p_new = (man*)malloc(sizeof(man));
 	p_new->id = e;
+	
 	p_new->next = NULL;
+	
 
 	//3 插入  判断是否是头节点  
-	if (index==0) {
+	if (index == 0) {
 		p_new->next = L->head;
 		L->head = p_new;
 	}
@@ -74,7 +78,7 @@ int newmake(link_list*L, int index, int e) {
 	{
 		int i = 0;
 		man* tmp = L->head;
-		for ( i = 0; i < index-1; i++)
+		for (i = 0; i < index - 1; i++)
 		{
 			tmp = tmp->next;
 		}
@@ -84,24 +88,25 @@ int newmake(link_list*L, int index, int e) {
 
 	//4 长度加一
 	L->lenght++;
+	return 0;
 }
 
 
 
 //删除节点
-int delete(link_list*L,int index) {
+int delete(link_list* L, int index) {
 	//判断是为空表
-	if (L->lenght==0) {
+	if (L->lenght == 0) {
 		return 1;
 	}
 
 	//判断删除是否合理
-	if (index<0||index>=L->lenght) {
+	if (index < 0 || index >= L->lenght) {
 		return 2;
-}
+	}
 
 	//开始删除   1.  是否为头节点    2. else
-	if (0==index) {
+	if (0 == index) {
 		man* tmp = L->head;
 		L->head = tmp->next;
 		free(tmp);
@@ -111,17 +116,18 @@ int delete(link_list*L,int index) {
 		man* left = L->head;
 		man* right = NULL;//定义  一左一右 指针   right是要删除的节点
 		int i = 0;
-		for ( i = 0; i < index-1; i++)
+		for (i = 0; i < index - 1; i++)
 		{
 			left = left->next;
 		}
-		right=left->next;
+		right = left->next;
 		left->next = right->next;
 		free(right);
 	}
 
 	//长度减少
 	L->lenght--;
+	return 0;
 }
 
 
@@ -143,7 +149,27 @@ void show2(link_list* L) {
 
 
 
-
+//修改
+int upup(link_list* L, int index, int e) {
+	//判断是否为空
+	if (L->lenght == 0) {
+		return 1;
+	}
+	//判断位置是否合理
+	if (index < 0 || index >= L->lenght) {
+		return 2;
+	}
+	//移动指针位置为index
+	man* tmp = L->head;
+	int i = 0;
+	for (i = 0; i < index; i++)
+	{
+		tmp = tmp->next;
+	}
+	//改变该节点值
+	tmp->id = e;
+	return 0;
+}
 
 
 
@@ -153,6 +179,3 @@ int main() {
 	return 0;
 }
 
-free()
-{
-}
