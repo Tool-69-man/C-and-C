@@ -4,6 +4,8 @@
 #include"Charu.h"
 #include"Xuanze.h"
 
+//计科1904 熊义路 319102010436
+
 bool Uisystem::choice()
 {
 	//cout << "这里是算法排序工具" << endl;
@@ -44,6 +46,11 @@ bool Uisystem::choice()
 		cout << "无此选项,换个选项吧" << endl;
 		break;
 	}
+
+	//Sort *a1 = new Maop();//冒泡对象类型转换
+
+
+
 	return 0;
 }
 

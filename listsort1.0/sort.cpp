@@ -70,11 +70,14 @@ void Sort::scanfList()
 	}
 }
 
-void Sort::goSort()
+void Sort::goSort(Sort a1)
 {
-
-
+	//开始排序
+	/*a1.scanfList();
+	a1.show();
+	a1.sort();*/
 }
+
 
 void Sort::add()
 {
@@ -93,34 +96,13 @@ void Sort::add()
 	PC;
 }
 
-void Sort::sortlistUp()
-{
 
-	int i = 0;
-	int j = 0;
-
-	for (i = 0; i < count; i++)
-	{
-		for (j = i; j < count - i - 1; j++)
-		{
-			if (listnum[j].num > listnum[j + 1].num) {
-				int temp = 0;
-				temp = listnum[j + 1].num;
-				listnum[j + 1].num = listnum[j].num;
-				listnum[j].num = temp;
-			}
-		}
-	}
-	cout << "结果展示" << endl;
-	show();
-
-}
 
 Sort::Sort(int capacity)
 {
 	count = 0;
 	this->capacity = capacity;
-	listnum = new Num[capacity];
+	listnum = new Num[capacity];  //建立数组对象
 }
 
 Sort::Sort() :Sort(maxnum)

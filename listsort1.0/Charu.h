@@ -4,9 +4,9 @@ class Charu:public Sort
 {
 public:
 
-	void sortlistUp();
-	void sortlistDown();
+	void sortlistUp();//ÉýÐò
+	void sortlistDown();//½µÐò
 
-	void sort();
+	void sort();//Ñ¡Ôñ
 };
 

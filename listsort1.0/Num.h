@@ -3,7 +3,7 @@
 class Num
 {
 public:
-	int num;
-	void show();
+	int num;//Êý×Ö
+	void show();//Õ¹Ê¾
 };
 

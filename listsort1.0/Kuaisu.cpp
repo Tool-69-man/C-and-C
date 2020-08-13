@@ -4,9 +4,9 @@ void Kuaisu::sortlistUp(int low, int high)
 {
 	if (low<high)
 	{
-		int cen = quick1(low, high);
-		sortlistUp(low, cen - 1);//左递归
-		sortlistUp(cen + 1, high);//右子表
+		int shaoBing = quick1(low, high);
+		sortlistUp(low, shaoBing - 1);//左递归
+		sortlistUp(shaoBing + 1, high);//右子表
 	}
 	
 }
@@ -35,11 +35,13 @@ void Kuaisu::sort()
 		if (num == 0) {
 			cout << "开始快速排序升序" << endl;
 			sortlistUp(0 ,count-1);
-			show();
+			/*quick1(0 ,count-1);*/
+		
 			cout << "开始展示结果" << endl;
+			show();
 			li;
 			cout << "进行了" << this->jiao << "次数字变换" << endl;
-			cout << "下标low, high移动了" << this->num << "趟" << endl;
+			cout << "下标low, high移动了" << this->numBj << "趟" << endl;
 			cout << "平均时间复杂度O(nlogn),简单时间复杂度O(nlogn),复杂时间复杂度O(n*n)，空间复杂度O(logn),不稳定的排序方法" << endl;
 
 			PC;
@@ -50,7 +52,7 @@ void Kuaisu::sort()
 			cout << "开始快速排序降序" << endl;
 			sortlistUp(0, count-1);
 
-			//qsort(listnum,count,sizeof(Num),0);
+			qsort(listnum,count,sizeof(Num),0);
 
 
 
@@ -59,7 +61,7 @@ void Kuaisu::sort()
 			cout << "开始展示结果" << endl;
 			li;
 			cout << "进行了" << this->jiao << "次数字变换" << endl;
-			cout << "下标low, high移动了" << this->num << "趟" << endl;
+			cout << "下标low, high移动了" << this->numBj << "趟" << endl;
 			cout << "平均时间复杂度O(nlogn),简单时间复杂度O(nlogn),复杂时间复杂度O(n*n)，空间复杂度O(logn),不稳定的排序方法" << endl;
 			PC;
 			break;
@@ -74,27 +76,46 @@ void Kuaisu::sort()
 
 int Kuaisu::quick1(int low, int high)
 {
+	/*if (low > high)
+	{
+		return ;
+	}*/
 	int cen = listnum[low].num;
-
+	cout << "变量哨兵" << cen << endl;
+	show();
 	while (low < high)
 	{
-		while (low<high && listnum[high].num>cen) {
+		while (low<high && listnum[high].num>=cen) {
 			--high;
-			this->num++;
+			this->numBj++;
 		}
+		show();
 		listnum[low].num = listnum[high].num;
+		show();
 		this->jiao++;
 		while (low < high && listnum[low].num <= cen) {
 			low++;
-			this->num++;
+			this->numBj++;
 		}
+		show();
 		listnum[high].num = listnum[low].num;
 		show();
 		this->jiao++;
+		/*if (low<high)
+		{
+			int tr = listnum[low].num;
+			listnum[low].num = listnum[high].num;
+			listnum[high].num = tr;
+			this->jiao++;
+		}
+		show();*/
+		
 	}
+	//listnum[0].num = listnum[low].num;
 	listnum[low].num = cen;
 	this->jiao++;
 	cout << "变量哨兵" << cen << endl;
 	show();
 	return low;
+
 }

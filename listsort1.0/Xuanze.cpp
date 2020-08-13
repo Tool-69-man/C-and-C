@@ -10,19 +10,24 @@ void Xuanze::sortlistUp()
 	for ( i = 0; i < count; i++)
 	{
 		int min = i;
-		for ( j = 0; j < count-i; j++)
+		for (j = i + 1; j < count; j++)
 		{
 			if (listnum[min].num > listnum[j].num) {
 				min = j;
-			
+
+			}
+		}
+			if (min!=i) {
+				int temp = listnum[i].num;
+				listnum[i].num = listnum[min].num;
+					listnum[min].num = temp;
+					jiao++;
 			}
 			ccc++;
-		}
-		int temp = listnum[min].num;
-		listnum[min].num = listnum[i].num;
-		listnum[i].num = temp;
+		
+		
 		show();
-		jiao++;
+		
 	}
 	li;
 	cout << "进行了" << jiao << "次数字交换" << endl;
@@ -39,22 +44,27 @@ void Xuanze::sortlistDown()
 	int j = 0;
 	int jiao = 0;
 	int ccc = 0;
-	for (i = 0; i < count-1; i++)
+	for (i = 0; i < count; i++)
 	{
 		int min = i;
-		for (j = i+1; j < count ; j++)
+		for (j = i + 1; j < count; j++)
 		{
 			if (listnum[min].num < listnum[j].num) {
 				min = j;
-				
+
+			}
+		}
+			if (min != i) {
+				int temp = listnum[i].num;
+				listnum[i].num = listnum[min].num;
+				listnum[min].num = temp;
+				jiao++;
 			}
 			ccc++;
-		}
-		int temp = listnum[min].num;
-		listnum[min].num = listnum[i].num;
-		listnum[i].num = temp;
+		
+		
 		show();
-		jiao++;
+		
 	}
 	li;
 	cout << "进行了" << jiao << "次数字交换" << endl;
